@@ -6,7 +6,7 @@
   <title>Happy Birthday My Elizabeth 🎉</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Infinite carousel scroll */
+    
     @keyframes scroll {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
@@ -34,13 +34,12 @@
 </head>
 <body class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-pink-100 via-rose-100 to-peach-100 text-center">
 
-  <!-- Background music -->
+  
   <audio id="bg-music" loop>
     <source src="happy-birthday.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
   </audio>
 
-  <!-- Header text -->
+  
   <div class="mb-6 px-4">
     <h1 class="text-4xl md:text-6xl font-bold text-rose-600 mb-2 font-serif">
       Happy Birthday, My Elizabeth 💖
@@ -50,17 +49,16 @@
     </p>
   </div>
 
-  <!-- Play music button -->
+  
   <button 
     onclick="document.getElementById('bg-music').play(); this.style.display='none';" 
     class="mb-8 bg-rose-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-rose-600 transition-all">
     🎵 Play Birthday Song
   </button>
 
-  <!-- Carousel section -->
+  
   <div class="overflow-hidden w-full max-w-5xl rounded-2xl shadow-lg">
     <div class="slider">
-      <!-- 7 images (duplicate for infinite flow effect) -->
       <img src="1.jpg" alt="Elizabeth photo 1">
       <img src="2.jpg" alt="Elizabeth photo 2">
       <img src="3.jpg" alt="Elizabeth photo 3">
@@ -68,19 +66,16 @@
       <img src="5.jpg" alt="Elizabeth photo 5">
       <img src="6.jpg" alt="Elizabeth photo 6">
       <img src="7.jpg" alt="Elizabeth photo 7">
-
-      <!-- duplicate for seamless scroll -->
-      <img src="1.jpg" alt="Elizabeth photo 1 duplicate">
-      <img src="2.jpg" alt="Elizabeth photo 2 duplicate">
-      <img src="3.jpg" alt="Elizabeth photo 3 duplicate">
-      <img src="4.jpg" alt="Elizabeth photo 4 duplicate">
-      <img src="5.jpg" alt="Elizabeth photo 5 duplicate">
-      <img src="6.jpg" alt="Elizabeth photo 6 duplicate">
-      <img src="7.jpg" alt="Elizabeth photo 7 duplicate">
+      <img src="1.jpg" alt="Elizabeth photo 1">
+      <img src="2.jpg" alt="Elizabeth photo 2">
+      <img src="3.jpg" alt="Elizabeth photo 3">
+      <img src="4.jpg" alt="Elizabeth photo 4">
+      <img src="5.jpg" alt="Elizabeth photo 5">
+      <img src="6.jpg" alt="Elizabeth photo 6">
+      <img src="7.jpg" alt="Elizabeth photo 7">
     </div>
   </div>
 
-  <!-- Footer message -->
   <div class="mt-10 text-gray-700">
     <p class="text-xl font-medium">With all my love, always 💕</p>
   </div>
