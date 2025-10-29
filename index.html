@@ -35,12 +35,13 @@
 <body class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-pink-100 via-rose-100 to-peach-100 text-center">
 
   <!-- Background music -->
-  <audio autoplay loop>
-    <source src="/happy-birthday.mp3" type="audio/mpeg">
+  <audio id="bg-music" loop>
+    <source src="happy-birthday.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <div class="mb-8 px-4">
+  <!-- Header text -->
+  <div class="mb-6 px-4">
     <h1 class="text-4xl md:text-6xl font-bold text-rose-600 mb-2 font-serif">
       Happy Birthday, My Elizabeth 💖
     </h1>
@@ -49,9 +50,17 @@
     </p>
   </div>
 
+  <!-- Play music button -->
+  <button 
+    onclick="document.getElementById('bg-music').play(); this.style.display='none';" 
+    class="mb-8 bg-rose-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-rose-600 transition-all">
+    🎵 Play Birthday Song
+  </button>
+
   <!-- Carousel section -->
   <div class="overflow-hidden w-full max-w-5xl rounded-2xl shadow-lg">
     <div class="slider">
+      <!-- 7 images (duplicate for infinite flow effect) -->
       <img src="1.jpg" alt="Elizabeth photo 1">
       <img src="2.jpg" alt="Elizabeth photo 2">
       <img src="3.jpg" alt="Elizabeth photo 3">
@@ -60,6 +69,7 @@
       <img src="6.jpg" alt="Elizabeth photo 6">
       <img src="7.jpg" alt="Elizabeth photo 7">
 
+      <!-- duplicate for seamless scroll -->
       <img src="1.jpg" alt="Elizabeth photo 1 duplicate">
       <img src="2.jpg" alt="Elizabeth photo 2 duplicate">
       <img src="3.jpg" alt="Elizabeth photo 3 duplicate">
@@ -70,6 +80,7 @@
     </div>
   </div>
 
+  <!-- Footer message -->
   <div class="mt-10 text-gray-700">
     <p class="text-xl font-medium">With all my love, always 💕</p>
   </div>
