@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Elizabeth 🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Infinite carousel scroll */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .slider {
+      display: flex;
+      width: 200%;
+      animation: scroll 30s linear infinite;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-right: 1rem;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-pink-100 via-rose-100 to-peach-100 text-center">
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="happy-birthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="mb-8 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold text-rose-600 mb-2 font-serif">
+      Happy Birthday, My Elizabeth 💖
+    </h1>
+    <p class="text-lg md:text-2xl text-gray-700 italic">
+      a.k.a. My Tomato 🍅
+    </p>
+  </div>
+
+  <!-- Carousel section -->
+  <div class="overflow-hidden w-full max-w-5xl rounded-2xl shadow-lg">
+    <div class="slider">
+      <img src="1.jpg" alt="Elizabeth photo 1">
+      <img src="2.jpg" alt="Elizabeth photo 2">
+      <img src="3.jpg" alt="Elizabeth photo 3">
+      <img src="4.jpg" alt="Elizabeth photo 4">
+      <img src="5.jpg" alt="Elizabeth photo 5">
+      <img src="6.jpg" alt="Elizabeth photo 6">
+      <img src="7.jpg" alt="Elizabeth photo 7">
+
+      <img src="1.jpg" alt="Elizabeth photo 1 duplicate">
+      <img src="2.jpg" alt="Elizabeth photo 2 duplicate">
+      <img src="3.jpg" alt="Elizabeth photo 3 duplicate">
+      <img src="4.jpg" alt="Elizabeth photo 4 duplicate">
+      <img src="5.jpg" alt="Elizabeth photo 5 duplicate">
+      <img src="6.jpg" alt="Elizabeth photo 6 duplicate">
+      <img src="7.jpg" alt="Elizabeth photo 7 duplicate">
+    </div>
+  </div>
+
+  <div class="mt-10 text-gray-700">
+    <p class="text-xl font-medium">With all my love, always 💕</p>
+  </div>
+
+</body>
+</html>
